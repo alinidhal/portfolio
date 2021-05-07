@@ -14,6 +14,7 @@ body {
     background-color: #03071E;
     /* color: #03071E; */
     font-family: 'Josefin Slab', serif;
+    font-size: 1.3rem;
 }
 
 h1,
@@ -24,6 +25,11 @@ h5,
 h6 {
     color: #fff;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+p,
+.lead {
+    font-weight: 400;
 }
 
 a {
@@ -456,7 +462,7 @@ a:hover {
 }
 
 .button:hover {
-    background-color: #0062d3;
+    background-color: #3F37C9;
     color: #fff;
     transition: all 500ms ease;
 }
@@ -778,7 +784,7 @@ a:hover {
 --------------------------------------------------------------*/
 
 .hero {
-    height: 100vh;
+    height: 80vh;
     position: relative;
     color: #F8EDEB;
     background-color: #000;
@@ -1268,7 +1274,7 @@ a:hover {
 }
 
 .php-email-form button[type="submit"]:hover {
-    background: #3393ff;
+    background: #03071E;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1520,7 +1526,7 @@ footer {
     text-align: center;
     color: #fff;
     padding: 25px 0;
-    background: #0062d3;
+    background: #3F37C9;
 }
 
 footer .copyright {
@@ -1539,55 +1545,8 @@ footer .credits a {
 /* canvas */
 
 canvas {
+    height: 80vh;
     position: absolute;
     top: 0;
     left: 0;
-}
-
-
-/* canvas */
-
-
-/* Header */
-
-.large-header {
-    position: relative;
-    width: 100%;
-    background: #333;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center center;
-    z-index: 1;
-}
-
-#large-header {
-    background-color: black;
-}
-
-.main-title {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    color: #f9f1e9;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate3d(-50%, -50%, 0);
-    transform: translate3d(-50%, -50%, 0);
-}
-
-.demo-1 .main-title {
-    text-transform: uppercase;
-    font-size: 4.2em;
-    letter-spacing: 0.1em;
-}
-
-.main-title .thin {
-    font-weight: 200;
-}
-
-@media only screen and (max-width: 768px) {
-    .demo-1 .main-title {
-        font-size: 3em;
-    }
 }
