@@ -1562,3 +1562,8 @@ canvas {
     padding: 0;
     box-sizing: border-box;
 }
+
+.experi {
+    background-color: #fff;
+    padding: 1%;
+}
