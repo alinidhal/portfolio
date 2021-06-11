@@ -225,7 +225,7 @@
 
 .swiper-button-next.swiper-button-black,
 .swiper-button-prev.swiper-button-black {
-    --swiper-navigation-color: #000000
+    --swiper-navigation-color: #333430000
 }
 
 .swiper-button-lock {
@@ -291,7 +291,7 @@
     height: 8px;
     display: inline-block;
     border-radius: 50%;
-    background: #000;
+    background: #333430;
     opacity: .2
 }
 
@@ -395,7 +395,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-pagination-black {
-    --swiper-pagination-color: #000000
+    --swiper-pagination-color: #333430000
 }
 
 .swiper-pagination-lock {
@@ -488,7 +488,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-lazy-preloader-black {
-    --swiper-preloader-color: #000
+    --swiper-preloader-color: #333430
 }
 
 @keyframes swiper-preloader-spin {
@@ -581,7 +581,7 @@ button.swiper-pagination-bullet {
 
 .swiper-container-cube .swiper-cube-shadow:before {
     content: '';
-    background: #000;
+    background: #333430;
     position: absolute;
     left: 0;
     top: 0;

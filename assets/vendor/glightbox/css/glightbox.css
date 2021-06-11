@@ -429,12 +429,12 @@
   position: fixed;
   top: -1px;
   left: 0;
-  background: #000;
+  background: #333430;
   will-change: opacity;
 }
 
 .glightbox-mobile .goverlay {
-  background: #000;
+  background: #333430;
 }
 
 .gprev,
@@ -507,7 +507,7 @@ iframe.wait-autoplay {
   font-size: 1em;
   font-weight: normal;
   font-family: arial;
-  color: #000;
+  color: #333430;
   margin-bottom: 19px;
   line-height: 1.4em;
 }
@@ -520,7 +520,7 @@ iframe.wait-autoplay {
 }
 
 .glightbox-clean .gslide-video {
-  background: #000;
+  background: #333430;
 }
 
 .glightbox-clean .gprev,
@@ -933,6 +933,6 @@ iframe.wait-autoplay {
 
 @media screen and (max-height: 420px) {
   .goverlay {
-    background: #000;
+    background: #333430;
   }
 }

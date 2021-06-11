@@ -1780,7 +1780,7 @@
       if (url.match(/\.(mp4|ogg|webm|mov)$/) !== null) {
         videoSource = 'local';
         var html = '<video id="' + videoID + '" ';
-        html += "style=\"background:#000; max-width: ".concat(data.width, ";\" ");
+        html += "style=\"background:#333430; max-width: ".concat(data.width, ";\" ");
         html += 'preload="metadata" ';
         html += 'x-webkit-airplay="allow" ';
         html += 'webkit-playsinline="" ';
