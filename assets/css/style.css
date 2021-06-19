@@ -57,7 +57,6 @@ a:hover {
 
 .box-shadow,
 .paralax-mf,
-.service-box,
 .work-box,
 .card-blog,
 header {
@@ -891,56 +890,15 @@ ex-for {
 
 
 /*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-
-.service-box {
-    background-color: #fff;
-    padding: 2.5rem 1.3rem;
-    border-radius: 1rem;
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-.service-box:hover .ico-circle {
-    transition: all 500ms ease;
-    color: #fff;
-    background-color: #333430;
-    box-shadow: 0 0 0 10px #000;
-}
-
-.service-box .service-ico {
-    margin-bottom: 1rem;
-    color: #1e1e1e;
-}
-
-.service-box .ico-circle {
-    transition: all 500ms ease;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.service-box .ico-circle i {
-    line-height: 0;
-    font-size: 40px;
-}
-
-.service-box .s-title {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    text-align: center;
-    padding: .4rem 0;
-}
-
-.service-box .s-description {
-    color: #4e4e4e;
-}
-
-
-/*--------------------------------------------------------------
 # Counter
 --------------------------------------------------------------*/
+
+.bgBox {
+    background-color: #E5DBCF;
+    box-shadow: 0px 0 30px rgba(78, 78, 78, 0.08);
+    padding: 20px;
+    margin-top: 20px;
+}
 
 .counter-box {
     color: #fff;
