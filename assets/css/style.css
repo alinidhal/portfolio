@@ -63,6 +63,11 @@ header {
     box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
 
+
+/* button {
+    margin-top: 50px;
+} */
+
 .box-shadow-a,
 .button:hover {
     text-decoration: none;
@@ -445,6 +450,11 @@ ex-for {
 
 /*------/ Button /------*/
 
+.view-more {
+    width: 100%;
+    justify-content: center;
+}
+
 .button {
     background-color: #E5DBCF;
     color: #000;
@@ -459,6 +469,7 @@ ex-for {
     border: 1px solid;
     transition: all 500ms ease;
     cursor: pointer;
+    width: -webkit-fill-available;
 }
 
 .button:focus {
@@ -859,12 +870,9 @@ ex-for {
     padding-bottom: 4rem;
 }
 
-.about-mf .about-img {
-    margin-top: 3rem;
-}
-
 .about-mf .about-img img {
     margin-left: 10px;
+    margin-bottom: 100px;
 }
 
 @media (min-width: 767px) {
