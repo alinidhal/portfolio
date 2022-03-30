@@ -1,1014 +1,565 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Ali Nidhal | Développeur full-stack & WordPress</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-    <script src="https://kit.fontawesome.com/d4a4fc87bb.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>Nidhal</title>
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Josefin+Slab:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bg-portfoliobootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/477b4091bc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <!-- Ma navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img class="logo w-25" src="assets/an.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-            <div class="collapse navbar-collapse justify-content-around text-uppercase" id="navbarNav">
-                <ul class="navbar-nav justify-content-around">
-                    <li class="nav-item">
-                        <a class="nav-link " href="#apropos">À propos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#competences">Compétences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projets">Projets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#formations">Formations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experiences">Expériences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo"><img src="assets/img/an.png" alt="Logo" class="img-fluid"></a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto" href="#about">À propos</a></li>
+                    <li><a class="nav-link scrollto" href="#skill">Compétences</a></li>
+                    <li><a class="nav-link scrollto" href="#portfolio">Projets</a></li>
+                    <li><a class="nav-link scrollto" href="#formation">Formations</a></li>
+                    <li><a class="nav-link scrollto" href="#experience">Expériences</a></li>
+                    <li><a class="nav-link scrollto" href="https://www.linkedin.com/in/ali-nidhal/" target="_blank">linkedin</a></li>
+                    <li><a class="nav-link scrollto" href="https://github.com/alinidhal" target="_blank">GitHub</a></li>
                 </ul>
-                <ul class="navbar-nav justify-content-around ">
-                    <li class="nav-item">
-                        <a class="nav-link text-warning" href="https://www.linkedin.com/in/ali-nidhal/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-warning" href="https://github.com/alinidhal" target="_blank"><i class="fa-brands fa-github-square"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-warning" href="https://www.instagram.com/_kassimenidhal_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-warning" href="mailto: ali.nidhal@hotmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Mon Header -->
-    <header class="my-5 py-lg-5  d-flex align-items-center">
-        <div class="container text-center text-light">
-            <h1>Bonjour, <i class="fa-solid fa-laptop-code"></i> Je suis<br> Développeur web front-end Junior</h1>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
 
         </div>
     </header>
-    <!-- Mon contenu Main -->
-    <main class=" mb-5 pb-5">
-        <!-- À propos -->
-        <section class="mb-5 pb-5 container d-flex align-items-center" id="apropos">
-            <div class=" row align-items-center justify-content-around">
-                <div class=" w-50 text-justify">
-                    <h2>À propos</h2>
-                    <p>Ma persévérance m'a permis d'atteindre plusieurs objectifs dans la vie et aujourd'hui je fixe un objectif précis ; être un <b>Lead développeur</b>. Voilà pourquoi j'ai envie de grandir dans un métier en constante évolution pour m'épanouir
-                        professionnellement et gagner une importante expérience.</p>
-                    <p>Je suis <b>Ali Nidhal</b>, développeur web junior, actuellement en formation de <b>Concepteur et développeur d'application fullstack -Java</b> chez <a href="https://www.diginamic.fr/formation-concepteur-developpeur-application-fullstack/"
-                            target="_blank" class="link-decoration btn-link">Diginamic</a>, je souhaite signer un contrat d'apprentissage. Merci de me contacter pour une opportunité à promouvoir.</p>
-                    <button type="button" class="btn btn-decoration">
-                        <a href="assets/nidhal.pdf" target="_blank" class="btn-link text-decoration-none text-warning"><i class="fa-solid fa-download"></i> Lire mon CV </a>
-                    </button>
-                </div>
-                <div class=" w-25">
-                    <img src="assets/profil.png" alt="">
-                </div>
+    <!-- End Header -->
 
+    <!-- ======= Hero Section ======= -->
+    <div id="hero" class="hero route">
+        <div class="overlay-itro"></div>
+        <div class="hero-content display-table">
+            <div class="table-cell">
+                <div class="container">
+                    <h1 class="hero-title mb-4 text-dark">ALI NIDHAL</h1>
+                    <p class="hero-subtitle"> <strong><span class="typed" data-typed-items="Développeur web full-stack, à Marseille"></span></strong> </span>
+                    </p>
+                </div>
             </div>
-        </section>
-        <!-- Competences -->
-        <section class="py-5" id="competences">
+        </div>
+    </div>
+    <!-- End Hero Section -->
+
+    <main id="main" class="mb-5">
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about-mf sect-pt4 route p-lg-3">
             <div class="container">
-                <h2 class="text-light pt-5">Compétences</h2>
-                <div class="row align-items-center">
-                    <!-- Front-end -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Front-end</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>
-                                            <i class="devicon-javascript-plain colored"></i> JavaScript
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-bootstrap-plain colored"></i> Bootstrap
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-swift-plain colored"></i> Swift UI</p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-html5-plain colored"></i> HTML
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
+                <div class="box-shadow-full">
 
-                                            <i class="devicon-css3-plain colored"></i> CSS
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p><i class="fa-brands fa-angular text-danger"></i> Angular</p>
-                                    </li>
-                                </ul>
+                    <div class="row">
+                        <div class="col-md-6 p-md-5">
+                            <p>
+                                En reconversion professionnelle depuis 2 ans dans le domaine du numérique, je suis diplômé développeur web à Passerelle Numérique de l’École Centrale de Marseille. J’ai développé une qualité de compétences techniques et professionnelles avec lesquelles
+                                j’applique tous les jours.
+                            </p>
+                            <p>
+                                Je suis intègre et je m’adapte facilement dans une équipe. Disponible actuellement pour un contrat d’apprentissage, je serais ravi de vous apporter mes connaissances et compétences tout en m'améliorant au sein d’une équipe dynamique.
+                            </p>
+                            <button> <a href="assets/pdf/CV_Nidhal_Développeur_web.pdf" target="_blank" class="button">Lire mon CV</a> </button>
+                        </div>
+                        <div class="col-md-6  mb-md-auto">
+                            <div class="about-img">
+                                <img src="assets/img/profil.png" class="img-fluid rounded b-shadow-a card-img" alt="">
                             </div>
+                        </div>
 
-                        </div>
-                    </div>
-                    <!-- Back-end -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Back-end</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>
-                                            <i class="devicon-php-plain colored"></i> PHP
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-symfony-original colored"></i> Symfony
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-apache-plain colored"></i> Apache
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-nodejs-plain colored"></i> Node.Js
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-java-plain colored"></i> Java
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            &nbsp;</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Base de données -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Base de données</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>
-                                            <i class="devicon-mysql-plain colored"></i> MySQL
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-mongodb-plain colored"></i> MongoDB
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Gesrtion de contenu -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Gestion de contenu</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>
-                                            <i class="devicon-wordpress-plain colored"></i> WordPress
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p><i class="fab fa-elementor elementor-color"></i> Elementor</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Gestion de projets -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Gestion de projet</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>
-                                            <i class="devicon-git-plain colored"></i> Git
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-github-original colored"></i> GitHub
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p><i class="fas fa-clipboard-list text-primary"></i> Scrum</p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-trello-plain colored"></i> Trello
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Design -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Design</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p><i class="fa-solid fa-feather text-success"></i> UX/UI</p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-figma-plain colored"></i> Figma
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-photoshop-plain colored"></i> Photoshop / Photopea / Lightroom
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-canva-original colored"></i> Canva
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="fa-solid fa-key text-info"></i> Keynote
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
-            </div>
-
         </section>
-        <!-- Projets -->
-        <section class="" id="projets">
+        <!-- End About Section -->
+        <!-- ======= COMPETENCES SECTION =========== -->
+        <section id="skill" class="services-mf py-lg-5 route bg-section">
             <div class="container">
-                <h2 class="text-light h2-project">Projets</h2>
-                <div class="row align-items-center">
-                    <!-- Front-end -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Front-end</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>
-                                            <i class="devicon-javascript-plain colored"></i> JavaScript
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-bootstrap-plain colored"></i> Bootstrap
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-swift-plain colored"></i> Swift UI</p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-html5-plain colored"></i> HTML
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-
-                                            <i class="devicon-css3-plain colored"></i> CSS
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p><i class="fa-brands fa-angular text-danger"></i> Angular</p>
-                                    </li>
-                                </ul>
-                            </div>
-
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="title-box text-center">
+                            <h2 class="title-a">
+                                Mes compétences
+                            </h2>
+                            <div class="line-mf"></div>
                         </div>
                     </div>
-                    <!-- Back-end -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Back-end</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>
-                                            <i class="devicon-php-plain colored"></i> PHP
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-symfony-original colored"></i> Symfony
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-apache-plain colored"></i> Apache
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-nodejs-plain colored"></i> Node.Js
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-java-plain colored"></i> Java
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            &nbsp;</p>
-                                    </li>
-                                </ul>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="bgBox">
+                            <div class="service-content">
+                                <h3 class="s-title">Front-end</h3>
+                                <div>
+                                    <ul class="list list-inline">
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-javascript-plain"></i></span> JavaScript
+                                        </li>
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-angularjs-plain"></i></span> Angular
+                                        </li>
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-bootstrap-plain"></i></span> Bootstrap
+                                        </li>
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-html5-plain"></i></span> HTML 5</li>
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-css3-plain"></i></span> CSS 3</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Base de données -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Base de données</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>
-                                            <i class="devicon-mysql-plain colored"></i> MySQL
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-mongodb-plain colored"></i> MongoDB
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                </ul>
+                    <div class="col-md-4">
+                        <div class="bgBox">
+                            <div class="service-content">
+                                <h3 class="s-title">Back-end</h3>
+                                <div>
+                                    <ul class="list list-inline">
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-php-plain"></i> </span> PHP
+                                        </li>
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-symfony-original"></i></span> Symfony
+                                        </li>
+                                        <li class="list-items"><span class="color-icon"> <i class="devicon-apache-line"></i></span> Apache
+                                        </li>
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-nodejs-plain"></i></span> Node.js
+                                        </li>
+                                        <li class="list-items">&nbsp;</li>
+                                    </ul>
+                                </div>
                             </div>
-
                         </div>
                     </div>
-                    <!-- Gesrtion de contenu -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Gestion de contenu</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>
-                                            <i class="devicon-wordpress-plain colored"></i> WordPress
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p><i class="fab fa-elementor elementor-color"></i> Elementor</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                </ul>
+                    <div class="col-md-4">
+                        <div class="bgBox">
+                            <div class="service-content">
+                                <h3 class="s-title">Base de données</h3>
+                                <div>
+                                    <ul class="list list-inline">
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-mysql-plain"></i></span> MySQL
+                                        </li>
+                                        <li class="list-items">&nbsp;</li>
+                                        <li class="list-items">&nbsp;</li>
+                                        <li class="list-items">&nbsp;</li>
+                                        <li class="list-items">&nbsp;</li>
+                                    </ul>
+                                </div>
                             </div>
-
                         </div>
                     </div>
-                    <!-- Gestion de projets -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Gestion de projet</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>
-                                            <i class="devicon-git-plain colored"></i> Git
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-github-original colored"></i> GitHub
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p><i class="fas fa-clipboard-list text-primary"></i> Scrum</p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-trello-plain colored"></i> Trello
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                </ul>
+                    <div class="col-md-4">
+                        <div class="bgBox">
+                            <div class="service-content">
+                                <h3 class="s-title">Gestion de contenu</h3>
+                                <div>
+                                    <ul class="list list-inline">
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-wordpress-plain"></i></span> WordPress
+                                        </li>
+                                        <li class="list-items"> <span class="color-icon"><i class="fab fa-elementor"></i> </span> Elementor</li>
+                                        <li class="list-items">&nbsp;</li>
+                                        <li class="list-items">&nbsp;</li>
+                                        <li class="list-items">&nbsp;</li>
+                                    </ul>
+                                </div>
                             </div>
-
                         </div>
                     </div>
-                    <!-- Design -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Design</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p><i class="fa-solid fa-feather text-success"></i> UX/UI</p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-figma-plain colored"></i> Figma
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-photoshop-plain colored"></i> Photoshop / Photopea / Lightroom
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-canva-original colored"></i> Canva
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="fa-solid fa-key text-info"></i> Keynote
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                </ul>
+                    <div class="col-md-4">
+                        <div class="bgBox">
+                            <div class="service-content">
+                                <h3 class="s-title">Gestion de projet</h3>
+                                <div>
+                                    <ul class="list list-inline">
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-git-plain"></i></span> Git</li>
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-github-original"></i></span> GitHub</li>
+                                        <li class="list-items"><span class="color-icon"><i class="fas fa-clipboard-list"></i></span> Scrum</li>
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-trello-plain"></i></span> Trello</li>
+                                        <li class="list-items">&nbsp;</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bgBox">
+                            <div class="service-content">
+                                <h3 class="s-title">Design</h3>
+                                <div>
+                                    <ul class="list list-inline">
+                                        <li class="list-items"><span class="color-icon"><i class="fas fa-feather-alt"></i></span> UX/UI</li>
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-figma-plain"></i></span> Figma</li>
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-photoshop-plain"></i></span> Photopea/Photoshop/Lightroom</li>
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-canva-original"></i></span> Canva</li>
+                                        <li class="list-items">&nbsp;</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Formations -->
-        <section class="" id="formations">
+        <!-- End Services Section -->
+
+        <!-- ======= PORTFOLIO SECTION ======= -->
+        <section id="portfolio" class="portfolio-mf sect-pt4 route mt-lg-4">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-sm-12">
+                        <div class="title-box text-center">
+                            <h2 class="title-a">
+                                Projets
+                            </h2>
+                            <div class="line-mf"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="bgBox">
+                            <div class="service-content">
+                                <img src="assets/img/atelierphenix.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Atelier Phenix</h5>
+                                    <p class="card-text">Développement web</p>
+                                    <ul class="list list-inline">
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-wordpress-plain"></i></span> WordPress
+                                        </li>
+                                        <li class="list-items"> <span class="color-icon"><i class="fab fa-elementor"></i> </span> Elementor</li>
+                                    </ul>
+                                    <button class="view-more"> <a href="https://atelierphenix.eu/" target="_blank"
+                                         class="button">Voir plus</a> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bgBox">
+                            <div class="service-content">
+                                <img src="assets/img/design.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Myart</h5>
+                                    <p class="card-text">Conception d'une application mobile</p>
+                                    <ul class="list list-inline">
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-figma-plain"></i></span> Figma</li>
+                                        <li class="list-items">&nbsp;</li>
+                                    </ul>
+                                    <button class="view-more"> <a href="assets/pdf/myart.pdf" target="_blank" class="button">Voir plus</a> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bgBox">
+                            <div class="service-content">
+                                <img src="assets/img/degaine.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Degaine</h5>
+                                    <p class="card-text">Développement web</p>
+                                    <ul class="list list-inline">
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-html5-plain"></i></span> HTML 5</li>
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-css3-plain"></i></span> CSS 3</li>
+                                    </ul>
+                                    <button class="view-more"> <a href="https://alinidhal.github.io/e-commerce-nidhal/" target="_blank" class="button">Voir plus</a> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bgBox">
+                            <div class="service-content">
+                                <img src="assets/img/cassebrique.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Casse Briques</h5>
+                                    <p class="card-text">Développement web (Projet d'équipe)</p>
+                                    <ul class="list list-inline">
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-javascript-plain"></i></span> JavaScript
+                                        </li>
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-bootstrap-plain"></i></span> Bootstrap
+                                        </li>
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-html5-plain"></i></span> HTML 5</li>
+                                        <li class="list-items"><span class="color-icon"><i class="devicon-css3-plain"></i></span> CSS 3</li>
+                                    </ul>
+                                    <button class="view-more"> <a href="https://haingorama.github.io/afterwork-brick/" target="_blank" class="button">Voir plus</a> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============ FORMATIONS SECTION ============ -->
+        <section id="formation" class="portfolio-mf sect-pt4 route bg-section py-lg-5">
             <div class="container">
-                <h2 class="text-light h2-formations">Formations</h2>
-                <div class="row align-items-center">
-                    <!-- Front-end -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Front-end</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>
-                                            <i class="devicon-javascript-plain colored"></i> JavaScript
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-bootstrap-plain colored"></i> Bootstrap
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-swift-plain colored"></i> Swift UI</p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-html5-plain colored"></i> HTML
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-
-                                            <i class="devicon-css3-plain colored"></i> CSS
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p><i class="fa-brands fa-angular text-danger"></i> Angular</p>
-                                    </li>
-                                </ul>
-                            </div>
-
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="title-box text-center">
+                            <h2 class="title-a">
+                                Formations
+                            </h2>
+                            <div class="line-mf"></div>
                         </div>
                     </div>
-                    <!-- Back-end -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Back-end</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>
-                                            <i class="devicon-php-plain colored"></i> PHP
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-symfony-original colored"></i> Symfony
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-apache-plain colored"></i> Apache
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-nodejs-plain colored"></i> Node.Js
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-java-plain colored"></i> Java
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            &nbsp;</p>
-                                    </li>
-                                </ul>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="bgBox">
+                            <div class="service-content">
+                                <h3 class="s-title">Diplôme Formation développeur.se web full stack</h3>
+                                <p class="date">2020-2021</p>
+                                <h4 class="h5">École Centrale de Marseille</h4>
+                                <p>Une formation diplômante d'une période de 9 mois (1200 heures) plus un stage de 6 semaines en entreprise. </p>
                             </div>
                         </div>
                     </div>
-                    <!-- Base de données -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Base de données</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>
-                                            <i class="devicon-mysql-plain colored"></i> MySQL
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-mongodb-plain colored"></i> MongoDB
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                </ul>
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bgBox">
+                            <div class="service-content">
+                                <h3 class="s-title">Formation aux métiers du numérique</h3>
+                                <p class="date">2019-2020</p>
+                                <h4 class="h5">Fabrik Ton Parcours, Avec Nous, Marseille</h4>
+                                <p>Une formation pour but de découvrir les différents métiers du numérique.</p>
                             </div>
-
                         </div>
                     </div>
-                    <!-- Gesrtion de contenu -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Gestion de contenu</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>
-                                            <i class="devicon-wordpress-plain colored"></i> WordPress
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p><i class="fab fa-elementor elementor-color"></i> Elementor</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                </ul>
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bgBox">
+                            <div class="service-content">
+                                <h3 class="s-title">Licence 1 en physique et application</h3>
+                                <p class="date">2018-2019</p>
+                                <h4 class="h5">Université d'Ankatso, Antananarivo, Madagascar</h4>
+                                <p>Licence d'Ingénierie en Gestion des Catastrophes et Réduction des Risques</p>
                             </div>
-
                         </div>
                     </div>
-                    <!-- Gestion de projets -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Gestion de projet</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>
-                                            <i class="devicon-git-plain colored"></i> Git
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-github-original colored"></i> GitHub
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p><i class="fas fa-clipboard-list text-primary"></i> Scrum</p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-trello-plain colored"></i> Trello
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                </ul>
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bgBox">
+                            <div class="service-content">
+                                <h3 class="s-title">Première année commune aux études de santé</h3>
+                                <p class="date">2017-2018</p>
+                                <h4 class="h5">Université de Toliara, Madagascar</h4>
                             </div>
-
                         </div>
                     </div>
-                    <!-- Design -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Design</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p><i class="fa-solid fa-feather text-success"></i> UX/UI</p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-figma-plain colored"></i> Figma
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-photoshop-plain colored"></i> Photoshop / Photopea / Lightroom
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-canva-original colored"></i> Canva
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="fa-solid fa-key text-info"></i> Keynote
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                </ul>
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bgBox">
+                            <div class="service-content">
+                                <h3 class="s-title">Formation en informatique et d'anglais</h3>
+                                <p class="date">2016-2017</p>
+                                <h4 class="h5">AETC, Comores</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bgBox">
+                            <div class="service-content">
+                                <h3 class="s-title">Diplôme Baccalauréat Général</h3>
+                                <p class="date">2015-2016</p>
+                                <h4 class="h5">Groupe Scolaire Avenir, Comores</h4>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
-        <section class="" id="experiences">
+        <!-- ============ ÉXPERIENCES SECTION ============ -->
+        <section id="experience" class="container route py-lg-5">
             <div class="container">
-                <h2 class=" pt-5">Expériences</h2>
-                <div class="row align-items-center">
-                    <!-- Front-end -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Front-end</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>
-                                            <i class="devicon-javascript-plain colored"></i> JavaScript
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-bootstrap-plain colored"></i> Bootstrap
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-swift-plain colored"></i> Swift UI</p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-html5-plain colored"></i> HTML
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-
-                                            <i class="devicon-css3-plain colored"></i> CSS
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p><i class="fa-brands fa-angular text-danger"></i> Angular</p>
-                                    </li>
-                                </ul>
-                            </div>
-
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="title-box text-center">
+                            <h2 class="title-a">
+                                Expériences
+                            </h2>
+                            <div class="line-mf"></div>
                         </div>
                     </div>
-                    <!-- Back-end -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Back-end</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>
-                                            <i class="devicon-php-plain colored"></i> PHP
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-symfony-original colored"></i> Symfony
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-apache-plain colored"></i> Apache
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-nodejs-plain colored"></i> Node.Js
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-java-plain colored"></i> Java
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            &nbsp;</p>
-                                    </li>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="bgBox">
+                            <div class="service-content">
+                                <h3 class="s-title">Développeur web front-end</h3>
+                                <p class="date">2021</p>
+                                <h4 class="h5">L'Autre Maison, association culturelle, Marseille</h4>
+                                <ul class="list">
+                                    <li class="list-items"> Création d'un site WordPress</li>
+                                    <li class="list-items"> Hébergement du site</li>
+                                    <li class="list-items"> Mise à jour</li>
+                                    <li class="list-items"> Mise en forme</li>
+                                    <li class="list-items"> Création des pages</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <!-- Base de données -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Base de données</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>
-                                            <i class="devicon-mysql-plain colored"></i> MySQL
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-mongodb-plain colored"></i> MongoDB
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bgBox">
+                            <div class="service-content">
+                                <h3 class="s-title">Développeur web front-end</h3>
+                                <p class="date">2021</p>
+                                <h4 class="h5">Atelier Phénix, agence évènementielle, Marseille</h4>
+                                <ul class="list">
+                                    <li class="list-items"> Création de sites WordPress</li>
+                                    <li class="list-items"> Hébergement du site</li>
+                                    <li class="list-items"> Mise à jour</li>
+                                    <li class="list-items"> Mise en forme</li>
+                                    <li class="list-items"> Création des pages</li>
+                                    <li class="list-items"> Prototypage</li>
                                 </ul>
                             </div>
-
                         </div>
                     </div>
-                    <!-- Gesrtion de contenu -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Gestion de contenu</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>
-                                            <i class="devicon-wordpress-plain colored"></i> WordPress
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p><i class="fab fa-elementor elementor-color"></i> Elementor</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bgBox">
+                            <div class="service-content">
+                                <h3 class="s-title">Chargé de la communication</h3>
+                                <p class="date">2020-2021</p>
+                                <h4 class="h5">Association des Jeunes Comoriens à Marseille</h4>
+                                <ul class="list">
+                                    <li class="list-items"> Informer les nouvelles de l'association</li>
+                                    <li class="list-items"> Organiser les réunions</li>
+                                    <li class="list-items"> Rédiger et transmettre les messages aux adhérent.es</li>
                                 </ul>
                             </div>
-
                         </div>
                     </div>
-                    <!-- Gestion de projets -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Gestion de projet</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>
-                                            <i class="devicon-git-plain colored"></i> Git
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-github-original colored"></i> GitHub
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p><i class="fas fa-clipboard-list text-primary"></i> Scrum</p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-trello-plain colored"></i> Trello
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bgBox">
+                            <div class="service-content">
+                                <h3 class="s-title">Assistance Fab-manager</h3>
+                                <p class="date">2020</p>
+                                <h4 class="h5">Fabrik Ton Parcours, Avec Nous, Marseille</h4>
+                                <ul class="list">
+                                    <li class="list-items"> Assister le formateur</li>
+                                    <li class="list-items"> Faciliter l'apprentissage aux apprenant.es</li>
                                 </ul>
                             </div>
-
                         </div>
                     </div>
-                    <!-- Design -->
-                    <div class="card col-lg-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Design</h5>
-                            <div class="card-text">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p><i class="fa-solid fa-feather text-success"></i> UX/UI</p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-figma-plain colored"></i> Figma
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-photoshop-plain colored"></i> Photoshop / Photopea / Lightroom
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="devicon-canva-original colored"></i> Canva
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="fa-solid fa-key text-info"></i> Keynote
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p> &nbsp;</p>
-                                    </li>
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bgBox">
+                            <div class="service-content">
+                                <h3 class="s-title">Secrétaire</h3>
+                                <p class="date">2019</p>
+                                <h4 class="h5">Association des Étudiants Comoriens, Madagascar</h4>
+                                <ul class="list">
+                                    <li class="list-items"> Informer les nouvelles de l'association</li>
+                                    <li class="list-items"> Rédiger et transmettre les messages aux adhérent.es</li>
                                 </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bgBox">
+                            <div class="service-content">
+                                <h3 class="s-title">Chef d'orchestre</h3>
+                                <p class="date">2016-2017</p>
+                                <h4 class="h5">Association Culturelle et Traditionnelle de Dzahadjou, Comores</h4>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
+
     </main>
-    <!-- Mon footer -->
-    <footer class="fixed-bottom py-2">
-        <div class="container d-flex justify-content-between text-light">
-            <ul class="list-unstyled">
-                <li>
-                    <p><b>Ali Nidhal</b></p>
-                </li>
-                <li>
-                    <ul class="list-unstyled d-flex ">
-                        <li>
-                            <p> <b>T. 07 66 60 73 90</b></p>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul class="list-inline ">
+                        <li class="list-inline-item">
+                            <a href="https://github.com/alinidhal" target="_blank"><i class="fab fa-github"></i> GITHUB</a>
                         </li>
-                        <li class="ms-4">
-                            <a class="text-warning" href="https://www.instagram.com/poemes_de_kassime/" target="_blank">Insta Poèmes   &nbsp; <i class="fa-solid fa-feather"></i></a>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/ali-nidhal/" target="_blank"><i class="fab fa-linkedin-in"></i> LINKEDIN</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="mailto:ali.nidhal@hotmail.com" target="_blank"><i class="fas fa-at"></i> EMAIL</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/_kassimenidhal_/" target="_blank"><i class="fab fa-instagram"></i> INSTAGRAM</a>
                         </li>
                     </ul>
-
-                </li>
-
-            </ul>
-
-            <a class="text-warning" href="#"><i class="fa-solid fa-circle-chevron-up"></i></a>
+                </div>
+            </div>
         </div>
-
     </footer>
+    <!-- End  Footer -->
 
-    <!-- Optional JavaScript; choose one of the two! -->
+    <div id="preloader"></div>
+    <a href="#"><i class="back-to-top d-flex align-items-center justify-content-center fas fa-chevron-up"></i></a>
 
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 
