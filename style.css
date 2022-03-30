@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --general-color: #45342C;
+    --link-color: #f6b93b;
+    --text-color: #ffffff;
+    --link-hover-color: #fa983a;
+    --blue-light-color: #3c6382;
+    --blue-link-hover-color: #60a3bc;
+    --h1-font-size: 3rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.8rem;
+    --p-font-size: 1.1rem;
+    --profil-widht: 25%;
+    --header-height: 55rem;
+    --aprpos-height: 55rem;
+    --competences-height: 49rem;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+}
+
+nav,
+footer {
+    background-color: var(--blue-light-color);
+}
+
+header {
+    background-color: var(--blue-light-color);
+    height: var(--header-height);
+}
+
+#apropos {
+    height: var(--aprpos-height);
+}
+
+#competences,
+#projets,
+#formations {
+    background-color: var(--blue-light-color);
+    height: var(--competences-height);
+}
+
+#experiences {
+    height: var(--competences-height);
+}
+
+.h2-project,
+.h2-formations {
+    padding-top: 6rem;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.link-decoration {
+    color: var(--blue-light-color);
+}
+
+.link-decoration:hover {
+    color: var(--blue-link-hover-color);
+}
+
+.btn-decoration {
+    background-color: var(--blue-light-color);
+}
+
+.btn-decoration:hover {
+    background-color: var(--blue-link-hover-color);
+}
+
+.elementor-color {
+    color: #833471;
+}
