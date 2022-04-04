@@ -235,6 +235,18 @@ ex-for {
     bottom: -12px;
 }
 
+.link-decoration {
+    color: var(--blue-light-color);
+}
+
+.btn-decoration {
+    background-color: var(--blue-light-color);
+}
+
+.btn-decoration:hover {
+    background-color: var(--blue-link-hover-color);
+}
+
 
 /*------/ Box /------*/
 
