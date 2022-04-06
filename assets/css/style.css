@@ -247,6 +247,10 @@ ex-for {
     background-color: var(--blue-link-hover-color);
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 
 /*------/ Box /------*/
 
