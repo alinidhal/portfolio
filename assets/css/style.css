@@ -125,6 +125,10 @@ a:hover {
     background-position: center center;
 }
 
+main {
+    margin-bottom: 6%;
+}
+
 @media (max-width: 1024px) {
     .bg-image {
         background-attachment: scroll;
@@ -976,6 +980,10 @@ ex-for {
 .counter-num .counter {
     font-size: 2rem;
     margin-bottom: 0;
+}
+
+.elementor-color {
+    color: #82589F;
 }
 
 
