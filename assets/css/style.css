@@ -126,12 +126,18 @@ a:hover {
 }
 
 main {
-    margin-bottom: 6%;
+    margin-bottom: 10%;
 }
 
 @media (max-width: 1024px) {
     .bg-image {
         background-attachment: scroll;
+    }
+}
+
+@media (max-width: 360px) {
+    main {
+        margin-bottom: 40%;
     }
 }
 
@@ -279,6 +285,9 @@ ex-for {
 @media (min-width: 768px) {
     .box-shadow-full {
         padding: 3rem;
+    }
+    main {
+        margin-bottom: 20%;
     }
 }
 
@@ -697,6 +706,9 @@ ex-for {
     }
     .navbar .dropdown .dropdown:hover>ul {
         left: -100%;
+    }
+    main {
+        margin-bottom: 40%;
     }
 }
 
