@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
 body {
-    background-color: var(--background-color);
+    background-color: var(--blue-light-color);
     /* color: #03071E; */
     font-family: 'Roboto Mono', monospace;
     font-size: var(--p-font-size)
@@ -921,6 +921,10 @@ ex-for {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
+.about-mf {
+    background-color: var(--background-color);
+}
 
 .about-mf .box-shadow-full {
     padding-top: 4rem;
